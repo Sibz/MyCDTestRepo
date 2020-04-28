@@ -25,6 +25,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Run a one-line script
       run: |
+        echo -e "$GPG_KEY" | gpg --import
         git config user.email "user@github-noreply.com"
         git config user.name "Hub User"
         git tag -s -m "CI tagged" v0.2.0
