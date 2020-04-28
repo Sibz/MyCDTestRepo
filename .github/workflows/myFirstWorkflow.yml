@@ -27,11 +27,10 @@ jobs:
       env: 
         GPG_KEY: ${{ secrets.GPG_KEY }}
       run: |
-        echo -e $GPG_KEY
+        echo -e $GPG_KEY | gpg --import
     
     - name: Run something else
       run: |
-        gpg --import key.asc
         git config user.email "user@github-noreply.com"
         git config user.name "Hub User"
         git tag -s -m "CI tagged" v0.2.0
