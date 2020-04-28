@@ -27,7 +27,7 @@ jobs:
       env: 
         GPG_KEY: ${{ secrets.GPG_KEY }}
       run: |
-        echo -e $GPG_KEY
+        echo -e $GPG_KEY > key.asc
     
     - name: Run something else
       run: |
