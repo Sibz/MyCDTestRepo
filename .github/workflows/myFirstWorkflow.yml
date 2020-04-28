@@ -25,8 +25,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Run a one-line script
       run: |
-        echo -e $GPG_KEY > key.asc
-        type key.asc
+        echo -e $GPG_KEY
         gpg --import key.asc
         git config user.email "user@github-noreply.com"
         git config user.name "Hub User"
