@@ -27,7 +27,7 @@ jobs:
       env: 
         GPG_KEY: ${{ secrets.GPG_KEY }}
       run: |
-        echo -e $GPG_KEY > key.asc
+        echo -e "$GPG_KEY" > key.asc
         gpg --import key.asc
         gpg --list-secret-keys --keyid-format LONG
 
