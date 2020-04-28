@@ -31,6 +31,7 @@ jobs:
 
     - name: Run something else
       run: |
+        git config user.signingkey E35A02C55FBCA4CE
         git config user.email "user@github-noreply.com"
         git config user.name "Hub User"
         git tag -s -m "CI tagged" v0.2.0
