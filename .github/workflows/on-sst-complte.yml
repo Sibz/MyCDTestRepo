@@ -1,5 +1,6 @@
 name: "smoke-screen-tests-completed"
-on: [ status ]
+on:
+  status
 
 jobs:
   post-sst:
