@@ -1,0 +1,12 @@
+name: "smoke-screen-tests"
+on:
+  push:
+    - '!master'
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run tests
+        run: echo Test Complete

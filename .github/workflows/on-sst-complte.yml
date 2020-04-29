@@ -1,0 +1,10 @@
+name: "smoke-screen-tests-completed"
+on: [ status ]
+
+jobs:
+  post-sst:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: post sst
+        run: echo Test Complete
