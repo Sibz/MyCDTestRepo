@@ -1,7 +1,7 @@
 name: "smoke-screen-tests"
 on:
   push:
-    branches: [ !master ]
+    ignore-branches: [ master ]
 
 jobs:
   tests:
