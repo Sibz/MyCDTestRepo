@@ -10,3 +10,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run tests
       run: echo Test Complete
+    - uses: LouisBrunner/checks-action@v0.1.0
+      if: always()
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        name: Tests Complete
+        conclusion: success
