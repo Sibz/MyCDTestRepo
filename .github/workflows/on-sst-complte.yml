@@ -1,8 +1,5 @@
 name: smoke-screen-tests-completed
-on:
-  pull_request:
-    branches: [ master ]
-  check_suite:
+on: status
 
 jobs:
   post-sst:
