@@ -1,5 +1,5 @@
 name: smoke-screen-tests-completed
-on: [check_run]
+on: [check_suite]
 
 jobs:
   post-sst:
