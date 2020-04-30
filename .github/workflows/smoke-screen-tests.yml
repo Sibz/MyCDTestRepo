@@ -13,6 +13,6 @@ jobs:
     - uses: LouisBrunner/checks-action@v0.1.0
       if: always()
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.AUTH_TOKEN }}
         name: Tests Complete
         conclusion: success
